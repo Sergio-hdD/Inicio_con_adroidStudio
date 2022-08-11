@@ -5,7 +5,39 @@
     android:layout_height="wrap_content"> <!-- El "wrap_content" permite que se adapte-->
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Ingresar 1ra nota"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editNota1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Ingresar 2da nota"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editNota2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prácticas"/>
+        android:text="Calcular promedio" />
+
 </LinearLayout>
