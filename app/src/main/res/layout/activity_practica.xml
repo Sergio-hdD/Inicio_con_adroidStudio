@@ -35,10 +35,9 @@
         android:text="10" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPromedio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="buttonCalculatePress"
         android:text="Calcular promedio" />
 
 </LinearLayout>
