@@ -3,4 +3,9 @@
     <string name="labelInputNota1">Ingresar 1ra nota</string>
     <string name="labelInputNota2">Ingresar 2da nota</string>
     <string name="btnCalcularPromedio">Calcular promedio</string>
+    <string name="labelInputUser">Ingresar usuario</string>
+    <string name="labelInputPassword">Ingresar contraseña</string>
+    <string name="checkRecordUser">Rocardar usuario</string>
+    <string name="btnCrearUser">Crear usuario</string>
+    <string name="btnIniciarSesion">Iniciar sesión</string>
 </resources>

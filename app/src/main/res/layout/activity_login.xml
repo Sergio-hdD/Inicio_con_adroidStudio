@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/labelInputUser"/>
+
+    <EditText
+        android:id="@+id/txtNameUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/labelInputPassword"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberPassword"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRecordarUser"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkRecordUser" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/crearUser"
+            android:width="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="3dp"
+            android:text="@string/btnCrearUser"/>
+
+        <Button
+            android:id="@+id/iniciaSesion"
+            android:width="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginStart="3dp"
+            android:text="@string/btnIniciarSesion" />
+
+    </LinearLayout>
+
+</LinearLayout>
