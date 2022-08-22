@@ -43,8 +43,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void accionarPorBtnCrearUsuario(View view){
-        //TODO
-        Toast.makeText(LoginActivity.this, "Se redirige para crear usuario", Toast.LENGTH_SHORT).show();
+        Intent intentMA = new Intent(this, TermsAndConditionsActivity.class);
+        startActivity(intentMA);
     }
 
     public void accionarPorBtnInicarSesion(View view) {
