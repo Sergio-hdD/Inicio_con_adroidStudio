@@ -13,44 +13,20 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private CheckBox checkRecordUser;
-    private Button ntnCrearUser;
-    private Button btnInicarSesion;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        ntnCrearUser = findViewById(R.id.crearUser);
-        btnInicarSesion = findViewById(R.id.iniciaSesion);
-        checkRecordUser = (CheckBox) findViewById(R.id.checkBoxRecordarUser);
-
-        ntnCrearUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                accionarPorBtnCrearUsuario(view);
-            }
-        });
-
-        btnInicarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                accionarPorBtnInicarSesion(view);
-            }
-        });
-
     }
 
-    public void accionarPorBtnCrearUsuario(View view){
-        //TODO
+    public void accionarPorBtnCrearUsuario(View view) {
         Toast.makeText(LoginActivity.this, "Se redirige para crear usuario", Toast.LENGTH_SHORT).show();
     }
 
-    public void accionarPorBtnInicarSesion(View view) {
+    public void accionarPorBtnInicarSesion(View view){
         EditText etNameUser = (EditText) findViewById(R.id.txtNameUser);
         EditText etPassword = (EditText) findViewById(R.id.txtPassword);
-        if (etNameUser.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {//Si hay un campo vacio
+        if (etNameUser.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()){//Si hay un campo vacio
             Toast.makeText(LoginActivity.this, "Complete todos los datos.", Toast.LENGTH_SHORT).show();
         } else {
             Intent intentMA = new Intent(this, MainActivity.class);

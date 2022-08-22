@@ -35,9 +35,9 @@
         android:text="10" />
 
     <Button
-        android:id="@+id/btnPromedio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="calcularPromedio"
         android:text="@string/btnCalcularPromedio" />
 
 </LinearLayout>

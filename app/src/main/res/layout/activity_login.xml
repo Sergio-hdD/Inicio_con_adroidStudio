@@ -50,21 +50,21 @@
         android:layout_marginTop="15dp">
 
         <Button
-            android:id="@+id/crearUser"
             android:width="140dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:layout_marginEnd="3dp"
+            android:onClick="accionarPorBtnCrearUsuario"
             android:text="@string/btnCrearUser"/>
 
         <Button
-            android:id="@+id/iniciaSesion"
             android:width="140dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:layout_marginStart="3dp"
+            android:onClick="accionarPorBtnInicarSesion"
             android:text="@string/btnIniciarSesion" />
 
     </LinearLayout>
