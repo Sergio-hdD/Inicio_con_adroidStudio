@@ -47,16 +47,16 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(LoginActivity.this, "Se redirige para crear usuario", Toast.LENGTH_SHORT).show();
     }
 
-    public void accionarPorBtnInicarSesion(View view){
+    public void accionarPorBtnInicarSesion(View view) {
         EditText etNameUser = (EditText) findViewById(R.id.txtNameUser);
         EditText etPassword = (EditText) findViewById(R.id.txtPassword);
-        String mensaje = "";
-        if(checkRecordUser.isChecked()){
-            mensaje += "recordando el usuario "+ etNameUser.getText() + " y contraseña "+ etPassword.getText(); //TODO
-        }else{
-            mensaje += "sin recordar el usuario"; //TODO
+        if (etNameUser.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {//Si hay un campo vacio
+            Toast.makeText(LoginActivity.this, "Complete todos los datos.", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intentMA = new Intent(this, MainActivity.class);
+            intentMA.putExtra("data", etNameUser.getText().toString());//Agrego el nombre como parámetro, en la clave "data"
+            startActivity(intentMA);//Cambio de activity (enviando el parámetro)
         }
-        Toast.makeText(LoginActivity.this, "Se inicia sesión " + mensaje, Toast.LENGTH_SHORT).show(); //TODO
     }
 
 }

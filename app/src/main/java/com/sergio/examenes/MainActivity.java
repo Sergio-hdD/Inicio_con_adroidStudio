@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        //Muestro lo que llaga por parámetro desde el LoginActivity
+        String strNombre = getIntent().getStringExtra("data");//Obtengo el dato
+        Toast.makeText(MainActivity.this, "Te damos la bienvenida " + strNombre + "!!!", Toast.LENGTH_SHORT).show();
 
         btnCalcularPromedio = findViewById(R.id.btnPromedio);
 
