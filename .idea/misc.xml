@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activitity_l_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_agregar_examen.xml" value="0.16312056737588654" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_main22.xml" value="0.1" />
@@ -13,8 +14,11 @@
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_splash_screen.xml" value="0.10190217391304347" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.1" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/activity_terms_and_conditions_2.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/primary_toolbal.xml" value="0.1636271529888551" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/teminos.xml" value="0.1" />
+        <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/toolbar.xml" value="0.1" />
         <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/layout/xxxffff.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/Sergio/AndroidStudioProjects/Examenes/app/src/main/res/menu/menu_primary_tolbar.xml" value="0.1" />
       </map>
     </option>
   </component>

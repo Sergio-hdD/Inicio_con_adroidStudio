@@ -1,6 +1,7 @@
 package com.sergio.examenes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox checkRecordUser;
     private Button ntnCrearUser;
     private Button btnInicarSesion;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,10 @@ public class LoginActivity extends AppCompatActivity {
         ntnCrearUser = findViewById(R.id.crearUser);
         btnInicarSesion = findViewById(R.id.iniciaSesion);
         checkRecordUser = (CheckBox) findViewById(R.id.checkBoxRecordarUser);
+        toolbar = findViewById(R.id.toolbal);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Mis Examenes");
 
         ntnCrearUser.setOnClickListener(new View.OnClickListener() {
             @Override

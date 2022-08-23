@@ -1,6 +1,7 @@
 package com.sergio.examenes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 public class TermsAndConditionsActivity extends AppCompatActivity {
 
     private Button btnAcetar;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,10 @@ public class TermsAndConditionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_terms_and_conditions);
 
         btnAcetar = findViewById(R.id.bntAceptar);
+        toolbar = findViewById(R.id.toolbal);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Mis Examenes");
 
         btnAcetar.setOnClickListener(new View.OnClickListener() {
             @Override

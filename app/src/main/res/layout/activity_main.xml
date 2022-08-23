@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"> <!-- El "wrap_content" permite que se adapte-->
 
+    <include
+        android:id="@+id/toolbal"
+        layout="@layout/primary_toolbal"/>
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
