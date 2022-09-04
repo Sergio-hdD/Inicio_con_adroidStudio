@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class TermsAndConditionsActivity extends AppCompatActivity {
 
-    private Button btnAcetar;
-    private Toolbar toolbar;
+    Button btnAcetar;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

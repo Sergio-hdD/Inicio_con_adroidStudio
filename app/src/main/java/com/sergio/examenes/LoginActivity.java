@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private CheckBox checkRecordUser;
-    private Button ntnCrearUser;
-    private Button btnInicarSesion;
-    private Toolbar toolbar;
+    CheckBox checkRecordUser;
+    Button ntnCrearUser;
+    Button btnInicarSesion;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

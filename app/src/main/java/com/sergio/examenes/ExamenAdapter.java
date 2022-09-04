@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ExamenAdapter extends RecyclerView.Adapter<ExamenAdapter.ExamenViewHolder> {
 
-    private List<Examen> examenes;
+    List<Examen> examenes;
 
 
     OnItemClickListener onItemClickListener;
