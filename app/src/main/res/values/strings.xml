@@ -63,5 +63,6 @@
     <string name="descImgExamen1">Imagen examen 01</string>
     <string name="txtAgregar">Agregar</string>
     <string name="txtActive">Activo</string>
+    <string name="txtHola">Hola</string>
 
 </resources>

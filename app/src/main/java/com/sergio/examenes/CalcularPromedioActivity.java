@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class CalcularPromedioActivity extends AppCompatActivity {
 
-    private Button btnCalcularPromedio;
-    private Toolbar toolbar;
+    Button btnCalcularPromedio;
+    Toolbar toolbar;
 
 
     @Override
