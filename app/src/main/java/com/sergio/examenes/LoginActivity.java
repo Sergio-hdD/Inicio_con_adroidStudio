@@ -42,18 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Mis Examenes");
 
         if (this.pref.getBoolean(Constants.STR_CHECKRECORDUSER, false)) {//Si había elgido recordar usuario
-            actualizarYMostrarValoresEnView(true); //Con esto llena los campos
+            redirigirAlMainActivityYEnviarNombre(this.pref.getString(Constants.STR_USERNAME, Constants.STR_VACIO));
         }
-
-        //Con esto se limpia (si se destilda el check se vacía los campos, en vista y lo guardado)
-        checkRecordUser.setOnClickListener(new View.OnClickListener() {//Ante un clic en el check
-            @Override
-            public void onClick(View view) {
-                if (!checkRecordUser.isChecked() && pref.getBoolean(Constants.STR_CHECKRECORDUSER, false)) { //Si se eligió no recordar y tenía guarda que si recuerde (Si primer parámrtro es false y el segundo true)
-                    limpiar();
-                }
-            }
-        });
 
         ntnCrearUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,18 +87,6 @@ public class LoginActivity extends AppCompatActivity {
             editor.putString(Constants.STR_PASSWORD, inputPassword);
             editor.putBoolean(Constants.STR_CHECKRECORDUSER, estado);
             editor.apply();
-    }
-
-
-    private void limpiar() {
-        actualizarDatosAlmacenados(Constants.STR_VACIO, Constants.STR_VACIO, false);
-        actualizarYMostrarValoresEnView(false);
-    }
-
-    private void actualizarYMostrarValoresEnView(boolean estado) {
-        checkRecordUser.setChecked(estado);
-        etNameUser.setText(this.pref.getString(Constants.STR_USERNAME, Constants.STR_VACIO));
-        etPassword.setText(this.pref.getString(Constants.STR_PASSWORD, Constants.STR_VACIO));
     }
 
 }
