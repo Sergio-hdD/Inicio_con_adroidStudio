@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         setupAdapter();
 
+        //Muestro lo que llaga por parámetro desde el LoginActivity
+        String strNombre = getIntent().getStringExtra("data");//Obtengo el dato
+        if (strNombre != null) {
+            Toast.makeText(this, "Bienvenido/a " + strNombre + "!!!", Toast.LENGTH_SHORT).show();
+        }
         /* RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rvExamenes.setLayoutManager(layoutManager);*/
     }

@@ -23,10 +23,6 @@ public class CalcularPromedioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calcular_promedio);
 
-        //Muestro lo que llaga por parámetro desde el LoginActivity
-        String strNombre = getIntent().getStringExtra("data");//Obtengo el dato
-        Toast.makeText(CalcularPromedioActivity.this, "Te damos la bienvenida " + strNombre + "!!!", Toast.LENGTH_SHORT).show();
-
         btnCalcularPromedio = findViewById(R.id.btnPromedio);
 
         toolbar = findViewById(R.id.toolbal);
