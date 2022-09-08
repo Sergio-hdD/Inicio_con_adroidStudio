@@ -1,17 +1,30 @@
 package com.sergio.examenes;
 
 import java.util.Date;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
+@DatabaseTable(tableName = "examenes")
 public class Examen {
+
+    @DatabaseField(id = true)
     private Integer id;
+
+    @DatabaseField
     private String materia;
+
+    @DatabaseField
     private String fecha;
 
-    public Examen(int id, String materia, String fecha){
+
+    public Examen(String materia, String fecha){
         this.materia = materia;
         this.fecha = fecha;
     }
 
+    public Examen(){
+
+    }
 
     public Integer getId() {
         return id;

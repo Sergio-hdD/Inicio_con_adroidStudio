@@ -65,8 +65,13 @@ public class AgregarExamenActivity extends AppCompatActivity {
     }
 
     public void guardarMateria(String strMateria, String strFecha){
-        Toast.makeText(this, "El examen se guardaría", Toast.LENGTH_SHORT).show();
-        limpiarCampos();
+        try {
+            ExamenManager.getInstance(AgregarExamenActivity.this).agregarExamen(new Examen(strMateria, strFecha));
+            Toast.makeText(this, "El examen se registró correctamente", Toast.LENGTH_SHORT).show();
+            limpiarCampos();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void limpiarCampos(){

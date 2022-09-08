@@ -42,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public List<Examen> getExamenes() {
-        return new ArrayList<Examen>() {{
-            add(new Examen(1, "Ingenieria de Software 1", "2022-04-05"));
-            add(new Examen(2, "Algoritmos y Estructuras de Datos", "2022-04-07"));
-            add(new Examen(3, "Prueba de Software", "2022-04-08"));
-            add(new Examen(4, "Matematica", "2022-04-10"));
-        }};
+        try {
+            return ExamenManager.getInstance(this).getExamenes();//Traemos de la BD
+        }catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>();//Si hay un error devuelvo un array vacio
+        }
     }
 
 
