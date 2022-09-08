@@ -64,5 +64,9 @@
     <string name="txtAgregar">Agregar</string>
     <string name="txtActive">Activo</string>
     <string name="txtHola">Hola</string>
+    <string name="txtMateria">Materia</string>
+    <string name="txtFecha">Fecha</string>
+    <string name="txtGuardar">Guardar</string>
+    <string name="txtAgregarExamen">Agregar examen</string>
 
 </resources>
